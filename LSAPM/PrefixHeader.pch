@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  LSAPM
+//
+//  Created by Lumia_Saki on 2017/4/14.
+//  Copyright © 2017年 tianren.zhu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#import "LSRegisterHelper.h"
+#import "LSUtils.h"
+#import "LSMonitorModulesIdentifier.h"
+#import "LSDataProcessorIdentifier.h"
+
+#import "LSDataPassToProcessorModel.h"
+
+#import "LSMonitorModuleEventName.h"
+
+#define LSMonitorSect "LSMonitorSect"
+#define LSProcessorSect "LSProcessorSect"
+
+#define LSMonitor(name) \
+char *k##name##_monitor LSDataInSection(LSMonitorSect) = ""#name"";
+
+#define LSProcessor(name) \
+char *k##name##_processor LSDataInSection(LSProcessorSect) = ""#name"";
+
+#define LS_MODULE_SECTION_REQUEST_TYPE @"requestType"

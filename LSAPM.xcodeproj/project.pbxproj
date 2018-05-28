@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0A61AA1EA5096700C9876F /* LSStacktraceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A61A91EA5096700C9876F /* LSStacktraceModule.m */; };
+		0C3258921EADECF400A853CE /* NSURLConnection+LSAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258911EADECF400A853CE /* NSURLConnection+LSAPM.m */; };
+		0C3258951EADED0400A853CE /* NSURLSession+LSAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258941EADED0400A853CE /* NSURLSession+LSAPM.m */; };
+		0C3258981EADF1B700A853CE /* LSNetworkModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258971EADF1B700A853CE /* LSNetworkModule.m */; };
+		0C32589B1EADFD0A00A853CE /* LSURLConnectionMITM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C32589A1EADFD0A00A853CE /* LSURLConnectionMITM.m */; };
+		0C3258B71EAE2FC500A853CE /* LSNetworkBasicRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258B61EAE2FC500A853CE /* LSNetworkBasicRecordModel.m */; };
+		0C3258BA1EAE4E6400A853CE /* LSURLSessionMITM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258B91EAE4E6400A853CE /* LSURLSessionMITM.m */; };
+		0C3258BD1EAE548200A853CE /* LSURLSessionTaskAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3258BC1EAE548200A853CE /* LSURLSessionTaskAgent.m */; };
+		0C7855E51EC73A370047BAB9 /* LSPerformanceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7855E41EC73A370047BAB9 /* LSPerformanceDataModel.m */; };
+		0C7855E81EC73B380047BAB9 /* LSPerformanceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7855E71EC73B380047BAB9 /* LSPerformanceModule.m */; };
+		0CAF03C11EADB52D000D93F1 /* LSDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF03C01EADB52D000D93F1 /* LSDeviceDataModel.m */; };
+		0CAF03CA1EADB55B000D93F1 /* LSRendererDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF03C91EADB55B000D93F1 /* LSRendererDataModel.m */; };
+		0CAF03CD1EADB569000D93F1 /* LSStacktraceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF03CC1EADB569000D93F1 /* LSStacktraceDataModel.m */; };
+		0CC756C31E9BDA39003F90DC /* LSAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756C21E9BDA39003F90DC /* LSAPM.m */; };
+		0CC756C41E9BDA39003F90DC /* LSAPM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0CC756C11E9BDA39003F90DC /* LSAPM.h */; };
+		0CC756CF1E9BDA82003F90DC /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756CE1E9BDA82003F90DC /* BSBacktraceLogger.m */; };
+		0CC756DF1E9BDB2A003F90DC /* LSMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756DE1E9BDB2A003F90DC /* LSMonitorManager.m */; };
+		0CC756E71E9BDB6D003F90DC /* LSDataProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756E61E9BDB6D003F90DC /* LSDataProcessManager.m */; };
+		0CC756ED1E9BE053003F90DC /* LSFPSRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756EC1E9BE053003F90DC /* LSFPSRecorder.m */; };
+		0CC756F31E9BE0A7003F90DC /* LSDeviceInfoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756F21E9BE0A7003F90DC /* LSDeviceInfoRecorder.m */; };
+		0CC756F61E9BE0B4003F90DC /* LSMemoryRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756F51E9BE0B4003F90DC /* LSMemoryRecorder.m */; };
+		0CC756F91E9BE0C3003F90DC /* LSCPURecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC756F81E9BE0C3003F90DC /* LSCPURecorder.m */; };
+		9F01FE9E1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01FE9D1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.m */; };
+		9F01FEA11EA5C60800D97990 /* UIViewController+LSRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01FEA01EA5C60800D97990 /* UIViewController+LSRenderer.m */; };
+		9F03F1C81E9F7F2B00CF7065 /* LSLoggerTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F03F1C71E9F7F2B00CF7065 /* LSLoggerTemp.m */; };
+		9F03F1CC1E9F802E00CF7065 /* LSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F03F1CB1E9F802E00CF7065 /* LSUtils.m */; };
+		9F03F1CF1E9F804000CF7065 /* LSAPMConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F03F1CE1E9F804000CF7065 /* LSAPMConfiguration.m */; };
+		9F1EB2501EC1B9730043B779 /* LSFloatingWindowDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1EB24F1EC1B9730043B779 /* LSFloatingWindowDetailView.m */; };
+		9F1F4F3E1ECD8DED004296B3 /* LSPersistenceProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F4F3D1ECD8DED004296B3 /* LSPersistenceProcessor.m */; };
+		9F1F4F421ECD9261004296B3 /* LSPersistenceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F4F411ECD9261004296B3 /* LSPersistenceConfiguration.m */; };
+		9F1F4F461ECDA053004296B3 /* _LSPersistenceDataItemCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F4F451ECDA053004296B3 /* _LSPersistenceDataItemCount.m */; };
+		9F2860AD1ECC52980027D10D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2860AC1ECC52980027D10D /* Reachability.m */; };
+		9F3113881EB2E73000ABF2A8 /* LSFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3113871EB2E73000ABF2A8 /* LSFloatingWindow.m */; };
+		9F31138B1EB3261900ABF2A8 /* LSFloatingWindowProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F31138A1EB3261900ABF2A8 /* LSFloatingWindowProcessor.m */; };
+		9F39B1561ED3E2C100CAE002 /* QLSDataUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B1551ED3E2C100CAE002 /* QLSDataUpload.m */; };
+		9F3A74511EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A74501EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.m */; };
+		9F4B577B1ED4285600113766 /* QLSDataUploadConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B577A1ED4285600113766 /* QLSDataUploadConfiguration.m */; };
+		9F6F1F181EA077CD009745EB /* LSRegisterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F1F171EA077CD009745EB /* LSRegisterHelper.m */; };
+		9F6F1F1B1EA0AA9D009745EB /* LSANRRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F1F1A1EA0AA9D009745EB /* LSANRRecorder.m */; };
+		9F6F1F1E1EA0B8CF009745EB /* LSANRModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F1F1D1EA0B8CF009745EB /* LSANRModule.m */; };
+		9F9797361ED6BB6C000F7370 /* LSPersistenceNotificationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9797351ED6BB6C000F7370 /* LSPersistenceNotificationName.m */; };
+		9F9C50561EB075FD004BED9A /* LSNetworkDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C50551EB075FD004BED9A /* LSNetworkDataModel.m */; };
+		9F9C505A1EB07908004BED9A /* QLSNetworkAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C50591EB07908004BED9A /* QLSNetworkAnalyzer.m */; };
+		9F9C505E1EB09421004BED9A /* QLSAPMConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C505D1EB09421004BED9A /* QLSAPMConfiguration.m */; };
+		9F9C50661EB0A005004BED9A /* LSNetworkAnalyzerImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C50651EB0A005004BED9A /* LSNetworkAnalyzerImplement.m */; };
+		9FADFE1B1EAF4CF000564A39 /* QLSRequestDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FADFE1A1EAF4CF000564A39 /* QLSRequestDecorator.m */; };
+		9FD15B151EA7453700EB2E22 /* LSDataPassToProcessorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD15B141EA7453700EB2E22 /* LSDataPassToProcessorModel.m */; };
+		9FD8A8171EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8A8161EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.m */; };
+		9FD8A81C1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8A81B1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.m */; };
+		9FD8A8201EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8A81F1EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CC756BC1E9BDA39003F90DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				0CC756C41E9BDA39003F90DC /* LSAPM.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C0A61A81EA5096700C9876F /* LSStacktraceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStacktraceModule.h; sourceTree = "<group>"; };
+		0C0A61A91EA5096700C9876F /* LSStacktraceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStacktraceModule.m; sourceTree = "<group>"; };
+		0C0A61AB1EA509FF00C9876F /* LSStacktraceResponseType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStacktraceResponseType.h; sourceTree = "<group>"; };
+		0C3258901EADECF400A853CE /* NSURLConnection+LSAPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+LSAPM.h"; sourceTree = "<group>"; };
+		0C3258911EADECF400A853CE /* NSURLConnection+LSAPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+LSAPM.m"; sourceTree = "<group>"; };
+		0C3258931EADED0400A853CE /* NSURLSession+LSAPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+LSAPM.h"; sourceTree = "<group>"; };
+		0C3258941EADED0400A853CE /* NSURLSession+LSAPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+LSAPM.m"; sourceTree = "<group>"; };
+		0C3258961EADF1B700A853CE /* LSNetworkModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkModule.h; sourceTree = "<group>"; };
+		0C3258971EADF1B700A853CE /* LSNetworkModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworkModule.m; sourceTree = "<group>"; };
+		0C3258991EADFD0A00A853CE /* LSURLConnectionMITM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLConnectionMITM.h; sourceTree = "<group>"; };
+		0C32589A1EADFD0A00A853CE /* LSURLConnectionMITM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLConnectionMITM.m; sourceTree = "<group>"; };
+		0C3258B51EAE2FC500A853CE /* LSNetworkBasicRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkBasicRecordModel.h; sourceTree = "<group>"; };
+		0C3258B61EAE2FC500A853CE /* LSNetworkBasicRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworkBasicRecordModel.m; sourceTree = "<group>"; };
+		0C3258B81EAE4E6400A853CE /* LSURLSessionMITM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLSessionMITM.h; sourceTree = "<group>"; };
+		0C3258B91EAE4E6400A853CE /* LSURLSessionMITM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLSessionMITM.m; sourceTree = "<group>"; };
+		0C3258BB1EAE548200A853CE /* LSURLSessionTaskAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLSessionTaskAgent.h; sourceTree = "<group>"; };
+		0C3258BC1EAE548200A853CE /* LSURLSessionTaskAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLSessionTaskAgent.m; sourceTree = "<group>"; };
+		0C5FE8721ECDEA6C003FFF61 /* LSAppStateChangedResponsable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAppStateChangedResponsable.h; sourceTree = "<group>"; };
+		0C7855E31EC73A370047BAB9 /* LSPerformanceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPerformanceDataModel.h; sourceTree = "<group>"; };
+		0C7855E41EC73A370047BAB9 /* LSPerformanceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPerformanceDataModel.m; sourceTree = "<group>"; };
+		0C7855E61EC73B380047BAB9 /* LSPerformanceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPerformanceModule.h; sourceTree = "<group>"; };
+		0C7855E71EC73B380047BAB9 /* LSPerformanceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPerformanceModule.m; sourceTree = "<group>"; };
+		0C7855E91EC743D10047BAB9 /* LSPerformanceResponseType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPerformanceResponseType.h; sourceTree = "<group>"; };
+		0C9CDD611ECF3706005ADAF9 /* LSPersistenceNotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPersistenceNotificationName.h; sourceTree = "<group>"; };
+		0CAF03BF1EADB52D000D93F1 /* LSDeviceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDeviceDataModel.h; sourceTree = "<group>"; };
+		0CAF03C01EADB52D000D93F1 /* LSDeviceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDeviceDataModel.m; sourceTree = "<group>"; };
+		0CAF03C81EADB55B000D93F1 /* LSRendererDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSRendererDataModel.h; sourceTree = "<group>"; };
+		0CAF03C91EADB55B000D93F1 /* LSRendererDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSRendererDataModel.m; sourceTree = "<group>"; };
+		0CAF03CB1EADB569000D93F1 /* LSStacktraceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStacktraceDataModel.h; sourceTree = "<group>"; };
+		0CAF03CC1EADB569000D93F1 /* LSStacktraceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStacktraceDataModel.m; sourceTree = "<group>"; };
+		0CC756BE1E9BDA39003F90DC /* libLSAPM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLSAPM.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC756C11E9BDA39003F90DC /* LSAPM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAPM.h; sourceTree = "<group>"; };
+		0CC756C21E9BDA39003F90DC /* LSAPM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAPM.m; sourceTree = "<group>"; };
+		0CC756CD1E9BDA82003F90DC /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		0CC756CE1E9BDA82003F90DC /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		0CC756D11E9BDA92003F90DC /* LSDataProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDataProcessor.h; sourceTree = "<group>"; };
+		0CC756D31E9BDA92003F90DC /* LSMonitorModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMonitorModule.h; sourceTree = "<group>"; };
+		0CC756DD1E9BDB2A003F90DC /* LSMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMonitorManager.h; sourceTree = "<group>"; };
+		0CC756DE1E9BDB2A003F90DC /* LSMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMonitorManager.m; sourceTree = "<group>"; };
+		0CC756E51E9BDB6D003F90DC /* LSDataProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDataProcessManager.h; sourceTree = "<group>"; };
+		0CC756E61E9BDB6D003F90DC /* LSDataProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDataProcessManager.m; sourceTree = "<group>"; };
+		0CC756EB1E9BE053003F90DC /* LSFPSRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFPSRecorder.h; sourceTree = "<group>"; };
+		0CC756EC1E9BE053003F90DC /* LSFPSRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFPSRecorder.m; sourceTree = "<group>"; };
+		0CC756F11E9BE0A7003F90DC /* LSDeviceInfoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDeviceInfoRecorder.h; sourceTree = "<group>"; };
+		0CC756F21E9BE0A7003F90DC /* LSDeviceInfoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDeviceInfoRecorder.m; sourceTree = "<group>"; };
+		0CC756F41E9BE0B4003F90DC /* LSMemoryRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMemoryRecorder.h; sourceTree = "<group>"; };
+		0CC756F51E9BE0B4003F90DC /* LSMemoryRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMemoryRecorder.m; sourceTree = "<group>"; };
+		0CC756F71E9BE0C3003F90DC /* LSCPURecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCPURecorder.h; sourceTree = "<group>"; };
+		0CC756F81E9BE0C3003F90DC /* LSCPURecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCPURecorder.m; sourceTree = "<group>"; };
+		9F01FE9C1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewControllerLoadTimeModule.h; sourceTree = "<group>"; };
+		9F01FE9D1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewControllerLoadTimeModule.m; sourceTree = "<group>"; };
+		9F01FE9F1EA5C60800D97990 /* UIViewController+LSRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSRenderer.h"; sourceTree = "<group>"; };
+		9F01FEA01EA5C60800D97990 /* UIViewController+LSRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSRenderer.m"; sourceTree = "<group>"; };
+		9F03F1AE1E9F684400CF7065 /* LSBootable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBootable.h; sourceTree = "<group>"; };
+		9F03F1C61E9F7F2B00CF7065 /* LSLoggerTemp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoggerTemp.h; sourceTree = "<group>"; };
+		9F03F1C71E9F7F2B00CF7065 /* LSLoggerTemp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoggerTemp.m; sourceTree = "<group>"; };
+		9F03F1CA1E9F802E00CF7065 /* LSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUtils.h; sourceTree = "<group>"; };
+		9F03F1CB1E9F802E00CF7065 /* LSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUtils.m; sourceTree = "<group>"; };
+		9F03F1CD1E9F804000CF7065 /* LSAPMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAPMConfiguration.h; sourceTree = "<group>"; };
+		9F03F1CE1E9F804000CF7065 /* LSAPMConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAPMConfiguration.m; sourceTree = "<group>"; };
+		9F1D46271ECEEE140033DCE4 /* LSMonitorModuleEventName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMonitorModuleEventName.h; sourceTree = "<group>"; };
+		9F1EB24E1EC1B9730043B779 /* LSFloatingWindowDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFloatingWindowDetailView.h; sourceTree = "<group>"; };
+		9F1EB24F1EC1B9730043B779 /* LSFloatingWindowDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFloatingWindowDetailView.m; sourceTree = "<group>"; };
+		9F1F4F3C1ECD8DED004296B3 /* LSPersistenceProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPersistenceProcessor.h; sourceTree = "<group>"; };
+		9F1F4F3D1ECD8DED004296B3 /* LSPersistenceProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPersistenceProcessor.m; sourceTree = "<group>"; };
+		9F1F4F401ECD9261004296B3 /* LSPersistenceConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPersistenceConfiguration.h; sourceTree = "<group>"; };
+		9F1F4F411ECD9261004296B3 /* LSPersistenceConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPersistenceConfiguration.m; sourceTree = "<group>"; };
+		9F1F4F441ECDA053004296B3 /* _LSPersistenceDataItemCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSPersistenceDataItemCount.h; sourceTree = "<group>"; };
+		9F1F4F451ECDA053004296B3 /* _LSPersistenceDataItemCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _LSPersistenceDataItemCount.m; sourceTree = "<group>"; };
+		9F1F4F491ECDA1C8004296B3 /* LSPersistenceStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPersistenceStrategy.h; sourceTree = "<group>"; };
+		9F1FD2351EA49A63001D79B0 /* LSMonitorModulesIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMonitorModulesIdentifier.h; sourceTree = "<group>"; };
+		9F1FD2361EA4A029001D79B0 /* LSDataProcessorIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDataProcessorIdentifier.h; sourceTree = "<group>"; };
+		9F206FD91EAA10D00023BC09 /* LSDictionaryConvertable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDictionaryConvertable.h; sourceTree = "<group>"; };
+		9F28601A1ECC42220027D10D /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9F2860AC1ECC52980027D10D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9F3113861EB2E73000ABF2A8 /* LSFloatingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFloatingWindow.h; sourceTree = "<group>"; };
+		9F3113871EB2E73000ABF2A8 /* LSFloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFloatingWindow.m; sourceTree = "<group>"; };
+		9F3113891EB3261900ABF2A8 /* LSFloatingWindowProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFloatingWindowProcessor.h; sourceTree = "<group>"; };
+		9F31138A1EB3261900ABF2A8 /* LSFloatingWindowProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFloatingWindowProcessor.m; sourceTree = "<group>"; };
+		9F39B1541ED3E2C100CAE002 /* QLSDataUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSDataUpload.h; sourceTree = "<group>"; };
+		9F39B1551ED3E2C100CAE002 /* QLSDataUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSDataUpload.m; sourceTree = "<group>"; };
+		9F39B1571ED41AE600CAE002 /* LSDataProcessorPriority.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDataProcessorPriority.h; sourceTree = "<group>"; };
+		9F3A744F1EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+LSSafeAdd.h"; sourceTree = "<group>"; };
+		9F3A74501EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LSSafeAdd.m"; sourceTree = "<group>"; };
+		9F4B57791ED4285600113766 /* QLSDataUploadConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSDataUploadConfiguration.h; sourceTree = "<group>"; };
+		9F4B577A1ED4285600113766 /* QLSDataUploadConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSDataUploadConfiguration.m; sourceTree = "<group>"; };
+		9F6F1F141EA07793009745EB /* LSPriorityable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPriorityable.h; sourceTree = "<group>"; };
+		9F6F1F151EA077C6009745EB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9F6F1F161EA077CD009745EB /* LSRegisterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSRegisterHelper.h; sourceTree = "<group>"; };
+		9F6F1F171EA077CD009745EB /* LSRegisterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSRegisterHelper.m; sourceTree = "<group>"; };
+		9F6F1F191EA0AA9D009745EB /* LSANRRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSANRRecorder.h; sourceTree = "<group>"; };
+		9F6F1F1A1EA0AA9D009745EB /* LSANRRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSANRRecorder.m; sourceTree = "<group>"; };
+		9F6F1F1C1EA0B8CF009745EB /* LSANRModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSANRModule.h; sourceTree = "<group>"; };
+		9F6F1F1D1EA0B8CF009745EB /* LSANRModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSANRModule.m; sourceTree = "<group>"; };
+		9F9797351ED6BB6C000F7370 /* LSPersistenceNotificationName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPersistenceNotificationName.m; sourceTree = "<group>"; };
+		9F9C50541EB075FD004BED9A /* LSNetworkDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkDataModel.h; sourceTree = "<group>"; };
+		9F9C50551EB075FD004BED9A /* LSNetworkDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworkDataModel.m; sourceTree = "<group>"; };
+		9F9C50571EB0779D004BED9A /* LSNetworkAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkAnalyzer.h; sourceTree = "<group>"; };
+		9F9C50581EB07908004BED9A /* QLSNetworkAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSNetworkAnalyzer.h; sourceTree = "<group>"; };
+		9F9C50591EB07908004BED9A /* QLSNetworkAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSNetworkAnalyzer.m; sourceTree = "<group>"; };
+		9F9C505C1EB09421004BED9A /* QLSAPMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSAPMConfiguration.h; sourceTree = "<group>"; };
+		9F9C505D1EB09421004BED9A /* QLSAPMConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSAPMConfiguration.m; sourceTree = "<group>"; };
+		9F9C50641EB0A005004BED9A /* LSNetworkAnalyzerImplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkAnalyzerImplement.h; sourceTree = "<group>"; };
+		9F9C50651EB0A005004BED9A /* LSNetworkAnalyzerImplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworkAnalyzerImplement.m; sourceTree = "<group>"; };
+		9FADFE191EAF4CF000564A39 /* QLSRequestDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSRequestDecorator.h; sourceTree = "<group>"; };
+		9FADFE1A1EAF4CF000564A39 /* QLSRequestDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSRequestDecorator.m; sourceTree = "<group>"; };
+		9FADFE1C1EAF4D3300564A39 /* LSNetworkDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkDecorator.h; sourceTree = "<group>"; };
+		9FD15B131EA7453700EB2E22 /* LSDataPassToProcessorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDataPassToProcessorModel.h; sourceTree = "<group>"; };
+		9FD15B141EA7453700EB2E22 /* LSDataPassToProcessorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDataPassToProcessorModel.m; sourceTree = "<group>"; };
+		9FD8A8151EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewControllerTransitionTraceModule.h; sourceTree = "<group>"; };
+		9FD8A8161EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewControllerTransitionTraceModule.m; sourceTree = "<group>"; };
+		9FD8A8181EB1C95500AACC94 /* LSViewControllerTransitionInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewControllerTransitionInfoProvider.h; sourceTree = "<group>"; };
+		9FD8A8191EB1CBC500AACC94 /* LSViewControllerTransitionInfoResponseType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewControllerTransitionInfoResponseType.h; sourceTree = "<group>"; };
+		9FD8A81A1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewControllerTransitionInfoImplement.h; sourceTree = "<group>"; };
+		9FD8A81B1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewControllerTransitionInfoImplement.m; sourceTree = "<group>"; };
+		9FD8A81E1EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewControllerTransitionTraceDataModel.h; sourceTree = "<group>"; };
+		9FD8A81F1EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewControllerTransitionTraceDataModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CC756BB1E9BDA39003F90DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C32589C1EADFD2400A853CE /* MITM */ = {
+			isa = PBXGroup;
+			children = (
+				0C3258991EADFD0A00A853CE /* LSURLConnectionMITM.h */,
+				0C32589A1EADFD0A00A853CE /* LSURLConnectionMITM.m */,
+				0C3258B81EAE4E6400A853CE /* LSURLSessionMITM.h */,
+				0C3258B91EAE4E6400A853CE /* LSURLSessionMITM.m */,
+			);
+			name = MITM;
+			sourceTree = "<group>";
+		};
+		0C3258B41EAE2FA300A853CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C3258B51EAE2FC500A853CE /* LSNetworkBasicRecordModel.h */,
+				0C3258B61EAE2FC500A853CE /* LSNetworkBasicRecordModel.m */,
+				9F9C50541EB075FD004BED9A /* LSNetworkDataModel.h */,
+				9F9C50551EB075FD004BED9A /* LSNetworkDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0C7855E21EC739C20047BAB9 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				0C7855E31EC73A370047BAB9 /* LSPerformanceDataModel.h */,
+				0C7855E41EC73A370047BAB9 /* LSPerformanceDataModel.m */,
+				0C7855E61EC73B380047BAB9 /* LSPerformanceModule.h */,
+				0C7855E71EC73B380047BAB9 /* LSPerformanceModule.m */,
+				0C7855E91EC743D10047BAB9 /* LSPerformanceResponseType.h */,
+				0CC756EA1E9BE042003F90DC /* FPS */,
+				0CC756F01E9BE07D003F90DC /* CPU */,
+				0CC756EF1E9BE073003F90DC /* Memory */,
+			);
+			name = Performance;
+			sourceTree = "<group>";
+		};
+		0CAF03B41EADB413000D93F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF03BF1EADB52D000D93F1 /* LSDeviceDataModel.h */,
+				0CAF03C01EADB52D000D93F1 /* LSDeviceDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CAF03B71EADB4E5000D93F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF03C81EADB55B000D93F1 /* LSRendererDataModel.h */,
+				0CAF03C91EADB55B000D93F1 /* LSRendererDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CAF03B81EADB4EB000D93F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF03CB1EADB569000D93F1 /* LSStacktraceDataModel.h */,
+				0CAF03CC1EADB569000D93F1 /* LSStacktraceDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CC756B51E9BDA39003F90DC = {
+			isa = PBXGroup;
+			children = (
+				0CC756C01E9BDA39003F90DC /* LSAPM */,
+				0CC756BF1E9BDA39003F90DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CC756BF1E9BDA39003F90DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756BE1E9BDA39003F90DC /* libLSAPM.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CC756C01E9BDA39003F90DC /* LSAPM */ = {
+			isa = PBXGroup;
+			children = (
+				9F6F1F151EA077C6009745EB /* PrefixHeader.pch */,
+				9F03F1C91E9F7FE800CF7065 /* Utils */,
+				0CC756CC1E9BDA68003F90DC /* Module */,
+				0CC756CB1E9BDA60003F90DC /* Protocol */,
+				0CC756CA1E9BDA57003F90DC /* 3rd */,
+			);
+			path = LSAPM;
+			sourceTree = "<group>";
+		};
+		0CC756CA1E9BDA57003F90DC /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				9F28601A1ECC42220027D10D /* Reachability.h */,
+				9F2860AC1ECC52980027D10D /* Reachability.m */,
+				0CC756CD1E9BDA82003F90DC /* BSBacktraceLogger.h */,
+				0CC756CE1E9BDA82003F90DC /* BSBacktraceLogger.m */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		0CC756CB1E9BDA60003F90DC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756D11E9BDA92003F90DC /* LSDataProcessor.h */,
+				0CC756D31E9BDA92003F90DC /* LSMonitorModule.h */,
+				9F03F1AE1E9F684400CF7065 /* LSBootable.h */,
+				9F6F1F141EA07793009745EB /* LSPriorityable.h */,
+				9F206FD91EAA10D00023BC09 /* LSDictionaryConvertable.h */,
+				9FADFE1C1EAF4D3300564A39 /* LSNetworkDecorator.h */,
+				9F9C50571EB0779D004BED9A /* LSNetworkAnalyzer.h */,
+				9FD8A8181EB1C95500AACC94 /* LSViewControllerTransitionInfoProvider.h */,
+				9F1F4F491ECDA1C8004296B3 /* LSPersistenceStrategy.h */,
+				0C5FE8721ECDEA6C003FFF61 /* LSAppStateChangedResponsable.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		0CC756CC1E9BDA68003F90DC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756D61E9BDABB003F90DC /* DataProcess */,
+				0CC756D51E9BDAB1003F90DC /* Business */,
+				0CC756D41E9BDAA6003F90DC /* Interface */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		0CC756D41E9BDAA6003F90DC /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C505B1EB093FD004BED9A /* SHOULD QLSAPM */,
+				9F03F1CD1E9F804000CF7065 /* LSAPMConfiguration.h */,
+				9F03F1CE1E9F804000CF7065 /* LSAPMConfiguration.m */,
+				0CC756C11E9BDA39003F90DC /* LSAPM.h */,
+				0CC756C21E9BDA39003F90DC /* LSAPM.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		0CC756D51E9BDAB1003F90DC /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				9F1FD2351EA49A63001D79B0 /* LSMonitorModulesIdentifier.h */,
+				9F1D46271ECEEE140033DCE4 /* LSMonitorModuleEventName.h */,
+				0CC756DD1E9BDB2A003F90DC /* LSMonitorManager.h */,
+				0CC756DE1E9BDB2A003F90DC /* LSMonitorManager.m */,
+				9FD15B131EA7453700EB2E22 /* LSDataPassToProcessorModel.h */,
+				9FD15B141EA7453700EB2E22 /* LSDataPassToProcessorModel.m */,
+				0CC756DC1E9BDB0C003F90DC /* Hardware */,
+				0CC756DB1E9BDB08003F90DC /* UI */,
+				0CC756DA1E9BDAFE003F90DC /* Network */,
+				9F6F1F1F1EA0BB99009745EB /* Stacktrace */,
+				0C7855E21EC739C20047BAB9 /* Performance */,
+				0CC756D91E9BDAF7003F90DC /* Crash */,
+				0CC756D81E9BDAF0003F90DC /* ViewControllerTransitionTrace */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		0CC756D61E9BDABB003F90DC /* DataProcess */ = {
+			isa = PBXGroup;
+			children = (
+				9F1FD2361EA4A029001D79B0 /* LSDataProcessorIdentifier.h */,
+				9F39B1571ED41AE600CAE002 /* LSDataProcessorPriority.h */,
+				0CC756E51E9BDB6D003F90DC /* LSDataProcessManager.h */,
+				0CC756E61E9BDB6D003F90DC /* LSDataProcessManager.m */,
+				0CC756E41E9BDB5D003F90DC /* Persistence */,
+				0CC756E31E9BDB57003F90DC /* Logger */,
+				0CC756E11E9BDB40003F90DC /* SendToServer */,
+				0CC756E01E9BDB37003F90DC /* MonitorWindow */,
+			);
+			name = DataProcess;
+			sourceTree = "<group>";
+		};
+		0CC756D81E9BDAF0003F90DC /* ViewControllerTransitionTrace */ = {
+			isa = PBXGroup;
+			children = (
+				9FD8A81D1EB1D60600AACC94 /* Model */,
+				9FD8A8151EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.h */,
+				9FD8A8161EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.m */,
+				9FD8A81A1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.h */,
+				9FD8A81B1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.m */,
+				9FD8A8191EB1CBC500AACC94 /* LSViewControllerTransitionInfoResponseType.h */,
+			);
+			name = ViewControllerTransitionTrace;
+			sourceTree = "<group>";
+		};
+		0CC756D91E9BDAF7003F90DC /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Crash;
+			sourceTree = "<group>";
+		};
+		0CC756DA1E9BDAFE003F90DC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C50681EB0AC23004BED9A /* Categories */,
+				9FADFE181EAF4B6400564A39 /* Plug-in */,
+				0C3258B41EAE2FA300A853CE /* Model */,
+				0C32589C1EADFD2400A853CE /* MITM */,
+				0C3258961EADF1B700A853CE /* LSNetworkModule.h */,
+				0C3258971EADF1B700A853CE /* LSNetworkModule.m */,
+				0C3258BB1EAE548200A853CE /* LSURLSessionTaskAgent.h */,
+				0C3258BC1EAE548200A853CE /* LSURLSessionTaskAgent.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		0CC756DB1E9BDB08003F90DC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756E91E9BE039003F90DC /* ANR */,
+				0CC756E81E9BE034003F90DC /* Renderer */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		0CC756DC1E9BDB0C003F90DC /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756EE1E9BE06B003F90DC /* Device */,
+			);
+			name = Hardware;
+			sourceTree = "<group>";
+		};
+		0CC756E01E9BDB37003F90DC /* MonitorWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9F1EB24D1EC1B93E0043B779 /* View */,
+				9F3113891EB3261900ABF2A8 /* LSFloatingWindowProcessor.h */,
+				9F31138A1EB3261900ABF2A8 /* LSFloatingWindowProcessor.m */,
+			);
+			name = MonitorWindow;
+			sourceTree = "<group>";
+		};
+		0CC756E11E9BDB40003F90DC /* SendToServer */ = {
+			isa = PBXGroup;
+			children = (
+				9F39B1531ED3E2A200CAE002 /* SHOULD QLSAPM */,
+			);
+			name = SendToServer;
+			sourceTree = "<group>";
+		};
+		0CC756E31E9BDB57003F90DC /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				9F03F1C61E9F7F2B00CF7065 /* LSLoggerTemp.h */,
+				9F03F1C71E9F7F2B00CF7065 /* LSLoggerTemp.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		0CC756E41E9BDB5D003F90DC /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F4F431ECDA026004296B3 /* InternalClass */,
+				9F1F4F3F1ECD924A004296B3 /* Configuration */,
+				0C9CDD611ECF3706005ADAF9 /* LSPersistenceNotificationName.h */,
+				9F9797351ED6BB6C000F7370 /* LSPersistenceNotificationName.m */,
+				9F1F4F3C1ECD8DED004296B3 /* LSPersistenceProcessor.h */,
+				9F1F4F3D1ECD8DED004296B3 /* LSPersistenceProcessor.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		0CC756E81E9BE034003F90DC /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C50691EB0AC36004BED9A /* Categories */,
+				0CAF03B71EADB4E5000D93F1 /* Model */,
+				9F01FE9C1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.h */,
+				9F01FE9D1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.m */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		0CC756E91E9BE039003F90DC /* ANR */ = {
+			isa = PBXGroup;
+			children = (
+				9F6F1F191EA0AA9D009745EB /* LSANRRecorder.h */,
+				9F6F1F1A1EA0AA9D009745EB /* LSANRRecorder.m */,
+				9F6F1F1C1EA0B8CF009745EB /* LSANRModule.h */,
+				9F6F1F1D1EA0B8CF009745EB /* LSANRModule.m */,
+			);
+			name = ANR;
+			sourceTree = "<group>";
+		};
+		0CC756EA1E9BE042003F90DC /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756EB1E9BE053003F90DC /* LSFPSRecorder.h */,
+				0CC756EC1E9BE053003F90DC /* LSFPSRecorder.m */,
+			);
+			name = FPS;
+			sourceTree = "<group>";
+		};
+		0CC756EE1E9BE06B003F90DC /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF03B41EADB413000D93F1 /* Model */,
+				0CC756F11E9BE0A7003F90DC /* LSDeviceInfoRecorder.h */,
+				0CC756F21E9BE0A7003F90DC /* LSDeviceInfoRecorder.m */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		0CC756EF1E9BE073003F90DC /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756F41E9BE0B4003F90DC /* LSMemoryRecorder.h */,
+				0CC756F51E9BE0B4003F90DC /* LSMemoryRecorder.m */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		0CC756F01E9BE07D003F90DC /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				0CC756F71E9BE0C3003F90DC /* LSCPURecorder.h */,
+				0CC756F81E9BE0C3003F90DC /* LSCPURecorder.m */,
+			);
+			name = CPU;
+			sourceTree = "<group>";
+		};
+		9F03F1C91E9F7FE800CF7065 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F6F1F161EA077CD009745EB /* LSRegisterHelper.h */,
+				9F6F1F171EA077CD009745EB /* LSRegisterHelper.m */,
+				9F03F1CA1E9F802E00CF7065 /* LSUtils.h */,
+				9F03F1CB1E9F802E00CF7065 /* LSUtils.m */,
+				9F3A744F1EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.h */,
+				9F3A74501EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		9F1EB24D1EC1B93E0043B779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F3113861EB2E73000ABF2A8 /* LSFloatingWindow.h */,
+				9F3113871EB2E73000ABF2A8 /* LSFloatingWindow.m */,
+				9F1EB24E1EC1B9730043B779 /* LSFloatingWindowDetailView.h */,
+				9F1EB24F1EC1B9730043B779 /* LSFloatingWindowDetailView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F1F4F3F1ECD924A004296B3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F4F401ECD9261004296B3 /* LSPersistenceConfiguration.h */,
+				9F1F4F411ECD9261004296B3 /* LSPersistenceConfiguration.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		9F1F4F431ECDA026004296B3 /* InternalClass */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F4F471ECDA05C004296B3 /* DataItemCount */,
+			);
+			name = InternalClass;
+			sourceTree = "<group>";
+		};
+		9F1F4F471ECDA05C004296B3 /* DataItemCount */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F4F441ECDA053004296B3 /* _LSPersistenceDataItemCount.h */,
+				9F1F4F451ECDA053004296B3 /* _LSPersistenceDataItemCount.m */,
+			);
+			name = DataItemCount;
+			sourceTree = "<group>";
+		};
+		9F39B1531ED3E2A200CAE002 /* SHOULD QLSAPM */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B57791ED4285600113766 /* QLSDataUploadConfiguration.h */,
+				9F4B577A1ED4285600113766 /* QLSDataUploadConfiguration.m */,
+				9F39B1541ED3E2C100CAE002 /* QLSDataUpload.h */,
+				9F39B1551ED3E2C100CAE002 /* QLSDataUpload.m */,
+			);
+			name = "SHOULD QLSAPM";
+			sourceTree = "<group>";
+		};
+		9F6F1F1F1EA0BB99009745EB /* Stacktrace */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF03B81EADB4EB000D93F1 /* Model */,
+				0C0A61A81EA5096700C9876F /* LSStacktraceModule.h */,
+				0C0A61A91EA5096700C9876F /* LSStacktraceModule.m */,
+				0C0A61AB1EA509FF00C9876F /* LSStacktraceResponseType.h */,
+			);
+			name = Stacktrace;
+			sourceTree = "<group>";
+		};
+		9F9C505B1EB093FD004BED9A /* SHOULD QLSAPM */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C505C1EB09421004BED9A /* QLSAPMConfiguration.h */,
+				9F9C505D1EB09421004BED9A /* QLSAPMConfiguration.m */,
+			);
+			name = "SHOULD QLSAPM";
+			sourceTree = "<group>";
+		};
+		9F9C50671EB0AA6F004BED9A /* SHOULD QLSAPM */ = {
+			isa = PBXGroup;
+			children = (
+				9FADFE191EAF4CF000564A39 /* QLSRequestDecorator.h */,
+				9FADFE1A1EAF4CF000564A39 /* QLSRequestDecorator.m */,
+				9F9C50581EB07908004BED9A /* QLSNetworkAnalyzer.h */,
+				9F9C50591EB07908004BED9A /* QLSNetworkAnalyzer.m */,
+			);
+			name = "SHOULD QLSAPM";
+			sourceTree = "<group>";
+		};
+		9F9C50681EB0AC23004BED9A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0C3258901EADECF400A853CE /* NSURLConnection+LSAPM.h */,
+				0C3258911EADECF400A853CE /* NSURLConnection+LSAPM.m */,
+				0C3258931EADED0400A853CE /* NSURLSession+LSAPM.h */,
+				0C3258941EADED0400A853CE /* NSURLSession+LSAPM.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9F9C50691EB0AC36004BED9A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9F01FE9F1EA5C60800D97990 /* UIViewController+LSRenderer.h */,
+				9F01FEA01EA5C60800D97990 /* UIViewController+LSRenderer.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9FADFE181EAF4B6400564A39 /* Plug-in */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C50671EB0AA6F004BED9A /* SHOULD QLSAPM */,
+				9F9C50641EB0A005004BED9A /* LSNetworkAnalyzerImplement.h */,
+				9F9C50651EB0A005004BED9A /* LSNetworkAnalyzerImplement.m */,
+			);
+			name = "Plug-in";
+			sourceTree = "<group>";
+		};
+		9FD8A81D1EB1D60600AACC94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FD8A81E1EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.h */,
+				9FD8A81F1EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CC756BD1E9BDA39003F90DC /* LSAPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC756C71E9BDA39003F90DC /* Build configuration list for PBXNativeTarget "LSAPM" */;
+			buildPhases = (
+				0CC756BA1E9BDA39003F90DC /* Sources */,
+				0CC756BB1E9BDA39003F90DC /* Frameworks */,
+				0CC756BC1E9BDA39003F90DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LSAPM;
+			productName = LSAPM;
+			productReference = 0CC756BE1E9BDA39003F90DC /* libLSAPM.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CC756B61E9BDA39003F90DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tianren.zhu;
+				TargetAttributes = {
+					0CC756BD1E9BDA39003F90DC = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0CC756B91E9BDA39003F90DC /* Build configuration list for PBXProject "LSAPM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0CC756B51E9BDA39003F90DC;
+			productRefGroup = 0CC756BF1E9BDA39003F90DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CC756BD1E9BDA39003F90DC /* LSAPM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CC756BA1E9BDA39003F90DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC756ED1E9BE053003F90DC /* LSFPSRecorder.m in Sources */,
+				9FD8A8171EB1C93200AACC94 /* LSViewControllerTransitionTraceModule.m in Sources */,
+				9FD8A8201EB1D62500AACC94 /* LSViewControllerTransitionTraceDataModel.m in Sources */,
+				9F9C50561EB075FD004BED9A /* LSNetworkDataModel.m in Sources */,
+				9F01FEA11EA5C60800D97990 /* UIViewController+LSRenderer.m in Sources */,
+				9F1F4F421ECD9261004296B3 /* LSPersistenceConfiguration.m in Sources */,
+				9F6F1F1B1EA0AA9D009745EB /* LSANRRecorder.m in Sources */,
+				0CAF03CA1EADB55B000D93F1 /* LSRendererDataModel.m in Sources */,
+				0C7855E81EC73B380047BAB9 /* LSPerformanceModule.m in Sources */,
+				0C0A61AA1EA5096700C9876F /* LSStacktraceModule.m in Sources */,
+				0CC756E71E9BDB6D003F90DC /* LSDataProcessManager.m in Sources */,
+				9F4B577B1ED4285600113766 /* QLSDataUploadConfiguration.m in Sources */,
+				0CC756C31E9BDA39003F90DC /* LSAPM.m in Sources */,
+				0C3258951EADED0400A853CE /* NSURLSession+LSAPM.m in Sources */,
+				9F1F4F461ECDA053004296B3 /* _LSPersistenceDataItemCount.m in Sources */,
+				0C7855E51EC73A370047BAB9 /* LSPerformanceDataModel.m in Sources */,
+				9F9C50661EB0A005004BED9A /* LSNetworkAnalyzerImplement.m in Sources */,
+				9F2860AD1ECC52980027D10D /* Reachability.m in Sources */,
+				9FD15B151EA7453700EB2E22 /* LSDataPassToProcessorModel.m in Sources */,
+				0C3258B71EAE2FC500A853CE /* LSNetworkBasicRecordModel.m in Sources */,
+				9F9C505A1EB07908004BED9A /* QLSNetworkAnalyzer.m in Sources */,
+				0CAF03CD1EADB569000D93F1 /* LSStacktraceDataModel.m in Sources */,
+				9F1EB2501EC1B9730043B779 /* LSFloatingWindowDetailView.m in Sources */,
+				9F03F1CF1E9F804000CF7065 /* LSAPMConfiguration.m in Sources */,
+				0C3258921EADECF400A853CE /* NSURLConnection+LSAPM.m in Sources */,
+				0CC756CF1E9BDA82003F90DC /* BSBacktraceLogger.m in Sources */,
+				9F9C505E1EB09421004BED9A /* QLSAPMConfiguration.m in Sources */,
+				0CC756F31E9BE0A7003F90DC /* LSDeviceInfoRecorder.m in Sources */,
+				9F39B1561ED3E2C100CAE002 /* QLSDataUpload.m in Sources */,
+				0CC756DF1E9BDB2A003F90DC /* LSMonitorManager.m in Sources */,
+				9F6F1F1E1EA0B8CF009745EB /* LSANRModule.m in Sources */,
+				0CC756F61E9BE0B4003F90DC /* LSMemoryRecorder.m in Sources */,
+				9F01FE9E1EA5C58F00D97990 /* LSViewControllerLoadTimeModule.m in Sources */,
+				9F3113881EB2E73000ABF2A8 /* LSFloatingWindow.m in Sources */,
+				9F03F1C81E9F7F2B00CF7065 /* LSLoggerTemp.m in Sources */,
+				0C3258981EADF1B700A853CE /* LSNetworkModule.m in Sources */,
+				9F6F1F181EA077CD009745EB /* LSRegisterHelper.m in Sources */,
+				9F3A74511EE00E32006E7728 /* NSMutableDictionary+LSSafeAdd.m in Sources */,
+				0C32589B1EADFD0A00A853CE /* LSURLConnectionMITM.m in Sources */,
+				9F9797361ED6BB6C000F7370 /* LSPersistenceNotificationName.m in Sources */,
+				9F1F4F3E1ECD8DED004296B3 /* LSPersistenceProcessor.m in Sources */,
+				0C3258BD1EAE548200A853CE /* LSURLSessionTaskAgent.m in Sources */,
+				9F31138B1EB3261900ABF2A8 /* LSFloatingWindowProcessor.m in Sources */,
+				0C3258BA1EAE4E6400A853CE /* LSURLSessionMITM.m in Sources */,
+				9F03F1CC1E9F802E00CF7065 /* LSUtils.m in Sources */,
+				0CC756F91E9BE0C3003F90DC /* LSCPURecorder.m in Sources */,
+				0CAF03C11EADB52D000D93F1 /* LSDeviceDataModel.m in Sources */,
+				9FADFE1B1EAF4CF000564A39 /* QLSRequestDecorator.m in Sources */,
+				9FD8A81C1EB1CDB800AACC94 /* LSViewControllerTransitionInfoImplement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0CC756C51E9BDA39003F90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0CC756C61E9BDA39003F90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CC756C81E9BDA39003F90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LSAPM/PrefixHeader.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0CC756C91E9BDA39003F90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LSAPM/PrefixHeader.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CC756B91E9BDA39003F90DC /* Build configuration list for PBXProject "LSAPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC756C51E9BDA39003F90DC /* Debug */,
+				0CC756C61E9BDA39003F90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC756C71E9BDA39003F90DC /* Build configuration list for PBXNativeTarget "LSAPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC756C81E9BDA39003F90DC /* Debug */,
+				0CC756C91E9BDA39003F90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CC756B61E9BDA39003F90DC /* Project object */;
+}
